@@ -56,12 +56,12 @@ some token verification sites
 https://dashboard.shareus.io/
 """
 
-# Turn this feature on or off using True or False put value inside  ""
+# Turn this feature on or off using True or False put value inside  "TRUE"
 # TRUE for yes FALSE if no 
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "techvjlink.site")
-# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
+# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ed506e4d3f137f472a3ffe1537ce57c19d663177")
 #use this key if not working ☠️ (jokin!!)
 SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ed506e4d3f137f472a3ffe1537ce57c19d663177")
 #add your custom time in secs for shortlink expiration.
