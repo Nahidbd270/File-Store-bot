@@ -81,11 +81,11 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/HowtoDowlnoad/14")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", " ")
+UPI_ID = os.environ.get("UPI_ID", "Nahidbd0121@gmail.com")
 #UPI QR CODE IMAGE
 UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "")
 #SCREENSHOT URL of ADMIN for verification of payments
-SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
+SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/gdtfgy55")
 #Time and its price
 #7 Days
 PRICE1 = os.environ.get("PRICE1", "30 rs")
