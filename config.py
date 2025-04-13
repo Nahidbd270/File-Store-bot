@@ -30,13 +30,13 @@ APP_ID = int(os.environ.get("APP_ID", "26195153"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "cffc45876502fd70a6d20141b3bd1c8f")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002406052868"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002583632419"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
 OWNER_ID = int(os.environ.get("OWNER_ID", "7409347279"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://mahap83280:mahap83280@cluster0.a7cnaha.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://moxace3851:moxace3851@cluster0.q5p4deh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 #your database name
 DB_NAME = os.environ.get("DB_NAME", "filestorebot")
 
