@@ -194,14 +194,14 @@ async def start_command(client: Client, message: Message):
                     link = await get_shortlink(SHORTLINK_API_URL, SHORTLINK_API_KEY,f'{newLink}')
                     if USE_PAYMENT:
                         btn = [
-                        [InlineKeyboardButton("Download Link 👆", url=link),
-                        InlineKeyboardButton('How to open this link 👆', url=TUT_VID)],
+                        [InlineKeyboardButton("Download", url=link),
+                        InlineKeyboardButton('Tutorial', url=TUT_VID)],
                         [InlineKeyboardButton("Buy Premium plan", callback_data="buy_prem")]
                         ]
                     else:
                         btn = [
-                        [InlineKeyboardButton("Download Link 👆", url=link)],
-                        [InlineKeyboardButton('How to open this link 👆', url=TUT_VID)]
+                        [InlineKeyboardButton("Download", url=link)],
+                        [InlineKeyboardButton('Tutorial', url=TUT_VID)]
                         ]
                     await message.reply(f"Total clicks {clicks}. Here is your link 👇.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
                     return
@@ -252,8 +252,8 @@ async def start_command(client: Client, message: Message):
                 ]
             else:
                 btn = [
-                [InlineKeyboardButton("Download link 👆", url=link)],
-                [InlineKeyboardButton('How to open this link 👆', url=TUT_VID)]
+                [InlineKeyboardButton("Download", url=link)],
+                [InlineKeyboardButton('Tutorial', url=TUT_VID)]
                 ]
             await message.reply(f"Your Ads token is expired, refresh your token and try again. \n\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nWhat is the token?\n\nThis is an ads token. If you pass 1 ad, you can use the bot for {get_exp_time(VERIFY_EXPIRE)} after passing the ad", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
             return
